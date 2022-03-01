@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>TODO page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- global js file -->
+    <script defer src="js/global.js"></script>
+    <link href="favicon.ico" rel="icon"/>
+</head>
+
+<body>
+<header class="header header--orange">
+    <a href="index.html" class="header__logo">
+        <img src="images/logo-white.svg" alt="" class="header__logo-img"/>
+        <span class="header__logo-text">Notes</span>
+    </a>
+    <button class="header__hamburger js-header-hamburger">
+        <span class="header__hamburger__bar"></span>
+        <span class="sr-only">Menu</span>
+    </button>
+    <div class="header__actions js-header-actions">
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav-link header__nav-link--active">All notes</a>
+            <a href="categories.html" class="header__nav-link">Categories</a>
+        </nav>
+        <div class="header__buttons">
+            <a href="https://kostakuu.rs" target="_blank" class="header__btn btn btn--orange">kostakuu</a>
+            <a href="https://www.vegait.rs/career/" target="_blank" class="header__btn btn btn--orange">
+                Career @ Vega IT
+            </a>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="wrap">
+        <div class="intro">
+            <h1 class="intro__title">Categories</h1>
+        </div>
+        <div class="todo">
+            <div class="todo__wrap">
+                <form action="javascript:" class="form todo__form">
+                    <div class="form__row">
+                        <div class="form__item">
+                            <label for="input" class="form__label">Add new category</label>
+                            <input type="text" id="input" class="form__input"
+                                   placeholder="Create new category here..."/>
+                        </div>
+                    </div>
+                    <div class="form__actions">
+                        <button type="submit" class="todo__btn btn btn--green">+</button>
+                    </div>
+                </form>
+                <ul class="todo__list">
+                    <li class="todo__item">
+                        <a href="category-filter.html" class="todo__text todo__text--category">Remember</a>
+                        <button type="button" class="todo__remove">X</button>
+                    </li>
+                    <li class="todo__item">
+                        <a href="category-filter.html" class="todo__text todo__text--category">Web development</a>
+                        <button type="button" class="todo__remove">X</button>
+                    </li>
+                    <li class="todo__item">
+                        <a href="category-filter.html" class="todo__text todo__text--category">React</a>
+                        <button type="button" class="todo__remove">X</button>
+                    </li>
+                    <li class="todo__item">
+                        <a href="category-filter.html" class="todo__text todo__text--category">General</a>
+                        <button type="button" class="todo__remove">X</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>

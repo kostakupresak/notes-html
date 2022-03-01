@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <title>Notebook | Home page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700" rel="stylesheet">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- global js file -->
+    <script defer src="js/global.js"></script>
+    <link href="favicon.ico" rel="icon"/>
+</head>
+
+<body>
+<header class="header header--orange">
+    <a href="index.html" class="header__logo">
+        <img src="images/logo-white.svg" alt="" class="header__logo-img"/>
+        <span class="header__logo-text">Notes</span>
+    </a>
+    <button class="header__hamburger js-header-hamburger">
+        <span class="header__hamburger__bar"></span>
+        <span class="sr-only">Menu</span>
+    </button>
+    <div class="header__actions js-header-actions">
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav-link header__nav-link--active">All notes</a>
+            <a href="categories.html" class="header__nav-link">Categories</a>
+        </nav>
+        <div class="header__buttons">
+            <a href="https://kostakuu.rs" target="_blank" class="header__btn btn btn--orange">kostakuu</a>
+            <a href="https://www.vegait.rs/career/" target="_blank" class="header__btn btn btn--orange">
+                Career @ Vega IT
+            </a>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="wrap">
+        <div class="intro">
+            <h1 class="intro__title">Notebook</h1>
+        </div>
+        <div class="new-note">
+            <form action="javascript:;" class="new-note__form form">
+                <div class="form__row">
+                    <div class="form__item">
+                        <label for="noteTitle" class="form__label">Add new note</label>
+                        <input type="text" id="noteTitle" class="new-note__input form__input" placeholder="Title">
+                        <label>
+                            <textarea class="new-note__textarea form__textarea" placeholder="Take a note..."></textarea>
+                        </label>
+                    </div>
+                </div>
+                <div class="new-note__actions form__actions">
+                    <div class="form__dropdown js-dropdown">
+                        <button type="button"
+                                class="form__dropdown-btn form__dropdown-btn--placeholder js-dropdown-btn">Select
+                            category...
+                        </button>
+                        <ul class="form__dropdown-list">
+                            <li class="form__dropdown-item js-dropdown-item">Remember</li>
+                            <li class="form__dropdown-item js-dropdown-item">Web development</li>
+                            <li class="form__dropdown-item js-dropdown-item">React</li>
+                            <li class="form__dropdown-item js-dropdown-item">General</li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="new-note__submit btn btn--green">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="notebook">
+            <div class="notebook__item">
+                <h2 class="notebook__title">
+                    <a href="item-details.html" class="notebook__link">Lorem ipsum dolor sit amet</a>
+                </h2>
+                <span class="notebook__date">22.02.2022.</span>
+                <a href="category-filter.html" class="notebook__category">Remember</a>
+            </div>
+            <div class="notebook__item">
+                <h2 class="notebook__title">
+                    <a href="item-details.html" class="notebook__link">Morbi tempus magna</a>
+                </h2>
+                <span class="notebook__date">22.02.2022.</span>
+                <a href="category-filter.html" class="notebook__category">Web development</a>
+            </div>
+            <div class="notebook__item">
+                <h2 class="notebook__title">
+                    <a href="item-details.html" class="notebook__link">Curabitur non fermentum turpis</a>
+                </h2>
+                <span class="notebook__date">22.02.2022.</span>
+                <a href="category-filter.html" class="notebook__category">React</a>
+            </div>
+            <div class="notebook__item">
+                <h2 class="notebook__title">
+                    <a href="item-details.html" class="notebook__link">Aliquam sit amet dolor aliquam</a>
+                </h2>
+                <span class="notebook__date">22.02.2022.</span>
+                <a href="category-filter.html" class="notebook__category">React</a>
+            </div>
+            <div class="notebook__item">
+                <h2 class="notebook__title">
+                    <a href="item-details.html" class="notebook__link">Ut varius ipsum non diam semper</a>
+                </h2>
+                <span class="notebook__date">22.02.2022.</span>
+                <a href="category-filter.html" class="notebook__category">Remember</a>
+            </div>
+            <div class="notebook__item">
+                <h2 class="notebook__title">
+                    <a href="item-details.html" class="notebook__link">Aliquam maximus sem</a>
+                </h2>
+                <span class="notebook__date">22.02.2022.</span>
+                <a href="category-filter.html" class="notebook__category">General</a>
+            </div>
+            <div class="notebook__item">
+                <h2 class="notebook__title">
+                    <a href="item-details.html" class="notebook__link">Etiam consequat mi ac nibh</a>
+                </h2>
+                <span class="notebook__date">22.02.2022.</span>
+                <a href="category-filter.html" class="notebook__category">Remember</a>
+            </div>
+            <div class="notebook__item">
+                <h2 class="notebook__title">
+                    <a href="item-details.html" class="notebook__link">Vestibulum ante ipsum primis</a>
+                </h2>
+                <span class="notebook__date">22.02.2022.</span>
+                <a href="category-filter.html" class="notebook__category">Web development</a>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+
+</html>
